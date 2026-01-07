@@ -1,0 +1,58 @@
+:root {
+  font-family: 'Microsoft JhengHei', 'PingFang TC', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  /* 紅色幕布背景 */
+  background: linear-gradient(180deg,
+      #5a1a1a 0%,
+      #8b2020 15%,
+      #7a1a1a 30%,
+      #6a1515 50%,
+      #7a1a1a 70%,
+      #8b2020 85%,
+      #5a1a1a 100%);
+  background-attachment: fixed;
+}
+
+/* 幕布紋理效果 */
+html::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(90deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
