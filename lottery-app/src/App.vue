@@ -52,7 +52,7 @@ const startLottery = () => {
   isSpinning.value = true
   winner.value = null
   
-  const duration = 3000 + Math.random() * 2000
+  const duration = 5000 + Math.random() * 2000
   const startTime = Date.now()
   
   const animate = () => {
