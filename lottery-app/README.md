@@ -1,5 +1,30 @@
-# Vue 3 + Vite
+# 🎬 忘年會抽獎 App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+公司忘年會專用的線上抽獎系統，具有電影院風格的華麗介面。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## ✨ 功能
+
+### 名單管理
+- 📁 上傳 `.txt` 名單檔案（格式：`姓名[Tab]部門`）
+- 📋 查看完整抽獎名單
+- 🔄 隨時更換名單檔案
+
+### 抽獎功能
+- 🎰 跑馬燈動畫效果（5-7 秒隨機滾動）
+- ✅ 已中獎者自動排除，不會重複抽到
+- 🏆 即時顯示中獎名單
+
+### 統計資訊
+- 顯示總人數、剩餘人數、已抽人數
+- 可隨時重置抽獎紀錄
+
+## 🚀 啟動方式
+
+```bash
+npm install
+npm run dev
+```
+
+## 📖 抽獎原理
+
+詳見 [抽獎原理說明.md](./抽獎原理說明.md)
